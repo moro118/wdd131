@@ -5,6 +5,7 @@
 header{
     padding: 2rem;
     grid-column: 1/4;
+    background: pink;
 }
 
 .left-sidebar{
@@ -19,4 +20,5 @@ main{
 }
 footer{
     grid-column: 1/4;
+    background: lightblue;
 }
