@@ -43,6 +43,6 @@ nav{
 }
 footer{
     grid-column: 1 / 4;
-    background-color: rgb(189, 64, 151);
+    background-color: rgb(181, 189, 64);
     padding: 2rem;
 }
