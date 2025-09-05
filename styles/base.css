@@ -1,0 +1,98 @@
+
+
+nav a {
+    color: #166fbd;
+    background-color: bisque;
+    text-decoration: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.5rem;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    font-weight: 500;
+}
+
+nav a:hover, nav a:focus {
+    background: #1976d2;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.15);
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+span#course-title {
+    display: block;
+    font-size: 2rem;
+}
+.parent{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template:  10rem 1fr 10rem /  1fr 1fr 1fr;
+    text-align: center;
+    font-family: 'Lora', serif;
+
+}
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    grid-column: 1 / 4;
+    background-color: lightblue;
+    width: 100%;
+}
+.main-content{
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: lightgrey;
+    width: 100%;
+    height: 100%;
+    
+}
+footer{
+    grid-column: 1 / 4;
+    background-color: rgb(181, 189, 64);
+    width: 100%;
+}
+.aboutme {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    justify-self: center;
+}
+.card img {
+    width: 50%;
+    margin: 2%;
+}
+.card h1 {
+   height:max-content;
+    background-color: rgb(107, 92, 167);
+ margin: 1px;
+
+}
+.card {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.webdevresources {
+    grid-column: 1 / 4;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
