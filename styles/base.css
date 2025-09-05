@@ -61,6 +61,8 @@ header{
     grid-template-columns: 1fr 1fr;
     background-color: lightgrey;
     width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
     height: 100%;
     
 }
