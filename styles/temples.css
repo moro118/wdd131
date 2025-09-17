@@ -21,7 +21,7 @@ header {
   text-align: center;
 }
 
-header p {
+header h1 {
   font-family: 'Montserrat', Arial, sans-serif;
   font-size: 2rem;
   margin: 0 0 0.5rem 0;
@@ -74,9 +74,9 @@ main {
   padding: 2rem;
 }
 
-h1 {
+h2 {
   font-family: 'Montserrat', Arial, sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--primary);
   text-align: center;
   margin-bottom: 2rem;
