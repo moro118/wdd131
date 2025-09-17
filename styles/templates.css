@@ -1,0 +1,160 @@
+:root {
+  --primary: #2a3d66;
+  --accent: #e8b04a;
+  --bg: #f7f7fa;
+  --text: #222;
+  --nav-bg: #fff;
+  --nav-hover: #e8b04a;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+}
+
+header {
+  background: var(--primary);
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header p {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 2rem;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 2px;
+}
+
+nav {
+  	background-color: #ace;
+}
+
+nav a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.navigation li {
+	display: none;
+}
+
+nav a:hover {
+  background: var(--nav-hover);
+  color: #fff;
+}
+.navigation a:hover,
+.navigation a:active {
+	color: white;
+	background-color: black;
+}
+
+/* Cuando el menú está abierto, muestra las opciones */
+.navigation.show li {
+  display: block;
+}
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(42,61,102,0.08);
+  padding: 2rem;
+}
+
+h1 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 2rem;
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.temple-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+figure {
+  margin: 0;
+  background: var(--bg);
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(42,61,102,0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+figure img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+figcaption {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.1rem;
+  color: var(--primary);
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: var(--primary);
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 2rem;
+  letter-spacing: 1px;
+}
+
+
+#menu {
+  display: block;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 100;
+  border-radius: 4px;
+}
+
+#menu::before {
+  content: "≡";
+}
+
+#menu.show::before {
+  content: "X";
+}
+
+.show a{
+  display: block;
+}
+
+
+
+
+
+
