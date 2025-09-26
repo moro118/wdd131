@@ -1,0 +1,32 @@
+@media (min-width: 600px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr; /* Data | Image | Weather */
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    /* Reorder the grid items to match the wireframe */
+    .data-card {
+        grid-column: 1 / 2;
+    }
+
+    .hero-image {
+        grid-column: 2 / 3;
+    }
+
+    .weather-card {
+        grid-column: 3 / 4;
+    }
+
+    /* Hide the mobile SVG icon */
+    .weather-icon {
+        display: none;
+    }
+
+    /* Add the emoji icon using a pseudo-element as required */
+    .weather-card h2::after {
+        content: ' ⛅'; /* Remember the space before the emoji */
+        font-size: 1.5rem;
+    }
+}

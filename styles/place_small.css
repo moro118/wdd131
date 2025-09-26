@@ -1,0 +1,50 @@
+:root {
+    /* Colors for Aguascalientes */
+    --primary-color: #9c2a2a; /* Deep Red */
+    --secondary-color: #f1f1f1; /* Off-white */
+    --accent-color: #6d8b74; /* Muted Green */
+    --text-color: #333;
+}
+body {
+    font-family: Arial, sans-serif; /* Choose your font */
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+.data-card, .weather-card {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+.weather-icon {
+    width: 40px;
+    height: auto;
+    vertical-align: middle; /* Aligns icon with heading text */
+}
+
+dl {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Two columns: label and value */
+    gap: 0.5rem 1rem;
+}
+
+dt {
+    font-weight: bold;
+    grid-column: 1 / 2;
+}
+
+dd {
+    grid-column: 2 / 3;
+}
