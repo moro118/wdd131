@@ -5,8 +5,9 @@
     --accent-color: #6d8b74; /* Muted Green */
     --text-color: #333;
 }
+
 body {
-    font-family: Arial, sans-serif; /* Choose your font */
+    font-family: 'Roboto', sans-serif;
 }
 
 header, footer {
