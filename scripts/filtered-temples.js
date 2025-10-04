@@ -99,8 +99,37 @@
     "https://churchofjesuschristtemples.org/assets/img/temples/guadalajara-mexico-temple/guadalajara-mexico-temple-17313.jpg"
   }];
 
-  createTempleCarsd();
-  function createTempleCarsd() {
+  const oldLink= document.querySelector('#oldlink');
+  const newLink= document.querySelector('#newlink');
+  const largeLink= document.querySelector('#largelink');
+  const smallLink= document.querySelector('#smalllink');
+  const homeLink= document.querySelector('#homelink');
+  oldLink.addEventListener('click', () => {
+    document.querySelector('.temple-gallery').innerHTML="";
+    let sortedTemples= temples.filter(temple => temples.dedicated.split(',')[0]<1900);
+    createTempleCards(sortedTemples);
+  });
+  newLink.addEventListener('click', () => {
+    document.querySelector('.temple-gallery').innerHTML="";
+    let sortedTemples= temples.filter(temple => temple.dedicated.split(',')[0]>=2000);
+    createTempleCards(sortedTemples);
+  });
+  largeLink.addEventListener('click', () => {
+    document.querySelector('.temple-gallery').innerHTML="";
+    let sortedTemples= temples.filter(temple => temple.area>90000);
+    createTempleCards(sortedTemples);
+  });
+  smallLink.addEventListener('click', () => {
+    document.querySelector('.temple-gallery').innerHTML="";
+    let sortedTemples= temples.filter(temple => temple.area<=10000);
+    createTempleCards(sortedTemples);
+  });
+  homeLink.addEventListener('click', () => {
+    document.querySelector('.temple-gallery').innerHTML="";
+    createTempleCards(temples);
+  });
+  createTempleCards(temples);
+  function createTempleCards(temples){ 
   temples.forEach(temple => {
     let card= document.createElement('section');
     let name=  document.createElement('h3');
