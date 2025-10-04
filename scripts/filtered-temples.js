@@ -91,12 +91,12 @@
   },
 
    {
-    templeName: "Guadalajara Mexico",
-    location: "Zapopan, Jalisco, Mexico",
-    dedicated: "2001, April, 29",
-    area: 10700,
+    templeName: "Salt Lake City Utah",
+    location: "Salt Lake City, Utah, United States",
+    dedicated: "1853, February, 14",
+    area: 382207,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/guadalajara-mexico-temple/guadalajara-mexico-temple-17313.jpg"
+    "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-4947.jpg"
   }];
 
   const oldLink= document.querySelector('#oldlink');
@@ -106,12 +106,12 @@
   const homeLink= document.querySelector('#homelink');
   oldLink.addEventListener('click', () => {
     document.querySelector('.temple-gallery').innerHTML="";
-    let sortedTemples= temples.filter(temple => temples.dedicated.split(',')[0]<1900);
+    let sortedTemples= temples.filter(temple => temple.dedicated.split(',')[0]<1900);
     createTempleCards(sortedTemples);
   });
   newLink.addEventListener('click', () => {
     document.querySelector('.temple-gallery').innerHTML="";
-    let sortedTemples= temples.filter(temple => temple.dedicated.split(',')[0]>=2000);
+    let sortedTemples= temples.filter(temple => temple.dedicated.split(',')[0]>2000);
     createTempleCards(sortedTemples);
   });
   largeLink.addEventListener('click', () => {
