@@ -1,0 +1,201 @@
+/* General Body and Font Styles */
+:root {
+    --primary-color: #4a4e69;
+    --secondary-color: #f4f4f9;
+    --accent-color: #ffc107;
+    --text-dark: #333;
+    --text-light: #fff;
+    --border-color: #ccc;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-dark);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+form {
+    background: var(--text-light);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(74, 78, 105, 0.5);
+}
+
+.required {
+    color: red;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+.rating label {
+    font-size: 2rem;
+    color: var(--border-color);
+    cursor: pointer;
+    margin: 0 0.2rem;
+    transition: color 0.2s;
+}
+
+
+.rating-group {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 0.75rem;
+}
+
+.rating-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem; 
+    font-weight: normal; 
+    margin: 0; 
+    cursor: pointer;
+}
+
+.checkbox-group {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1rem;
+}
+.checkbox-group input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+.checkbox-group label {
+    display: inline-block;
+    font-weight: normal;
+    margin: 0.2rem 1rem 0.2rem 0;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #3b3e56;
+}
+
+.confirmation-message {
+    text-align: center;
+    background: var(--text-light);
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.confirmation-message h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+.confirmation-message p {
+    font-size: 1.2rem;
+}
+
+#review-count {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+footer {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0;
+    }
+    main {
+        padding: 0.5rem;
+    }
+    form {
+        padding: 1rem;
+        box-shadow: none;
+        border-radius: 0;
+    }
+}
