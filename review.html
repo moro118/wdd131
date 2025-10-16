@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Review Submitted</title>
+  <meta name="description" content="Confirmation page for submitted product review">
+  <meta name="author" content="Moroni Amon Villalobos Ortega">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Review Submitted</h1>
+  </header>
+
+  <main>
+    <section class="review-summary" aria-labelledby="summary-heading">
+      <h2 id="summary-heading">Thanks — your review was submitted</h2>
+      <p>A summary of your submission is shown below.</p>
+
+      <dl>
+        <dt>Product</dt>
+        <dd id="product-name">—</dd>
+
+        <dt>Overall Rating</dt>
+        <dd id="rating">—</dd>
+
+        <dt>Date of Installation</dt>
+        <dd id="install-date">—</dd>
+
+        <dt>Comments</dt>
+        <dd id="comments">—</dd>
+      </dl>
+    </section>
+
+    <section class="review-count" aria-live="polite" role="status">
+      <p>Reviews completed: <strong id="review-count">0</strong></p>
+    </section>
+
+    <p><a href="form.html">Submit another review</a></p>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Moroni Amon Villalobos Ortega</p>
+    <p id="lastmodified" aria-live="polite"></p>
+  </footer>
+</body>
+</html>
