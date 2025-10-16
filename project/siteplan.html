@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FNSM Digital Guide - Site Plan</title>
+    <meta name="description" content="The site plan for the Feria Nacional de San Marcos digital guide, outlining the project's purpose, audience, branding, and structure.">
+    <meta name="author" content="Your Name">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Site Plan: FNSM Digital Guide</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Site Name</h2>
+            <p><strong>FNSM Digital Guide</strong></p>
+            <p>I chose this name because it's clear, descriptive, and uses the well-known acronym for the Feria Nacional de San Marcos (FNSM). It immediately tells users that the site is an online guide for the event.</p>
+            </section>
+
+        <section>
+            <h2>Site Purpose</h2>
+            <p>The FNSM Digital Guide will be a comprehensive, easy-to-use informational hub for visitors to the Feria Nacional de San Marcos. The site will provide a dynamic event schedule, highlight key attractions, and offer practical tips to enhance the visitor experience. Its goal is to help attendees plan their visit efficiently and discover all the fair has to offer.</p>
+        </section>
+
+        <section>
+            <h2>Scenarios</h2>
+            <ul>
+                <li>What are the must-see attractions for families with young children?</li>
+                <li>How can I find the schedule for the free concerts at the Foro de las Estrellas?</li>
+            </ul>
+        </section>
+
+        <section class="color-schema">
+            <h2>Color Schema</h2>
+            <p>The color palette is inspired by the vibrant and festive atmosphere of the fair.</p>
+            <div class="color-box" style="background-color: #A62639;">#A62639 (Deep Red): Used for primary headings, links, and key call-to-action buttons.</div>
+            <div class="color-box" style="background-color: #F2D399;">#F2D399 (Warm Gold): Used for accent backgrounds to highlight specific sections.</div>
+            <div class="color-box" style="background-color: #333333; color: #fff;">#333333 (Dark Gray): Used for all body text for maximum readability.</div>
+            <div class="color-box" style="background-color: #FDFBF7;">#FDFBF7 (Off-White): Used as the primary background color for a clean, warm feel.</div>
+        </section>
+
+        <section>
+            <h2>Typography</h2>
+            <p>The chosen fonts provide a balance of modern style and readability.</p>
+            <h3>Headings: Montserrat (Bold)</h3>
+            <p>Montserrat is a modern, geometric sans-serif that is strong and highly legible, making it perfect for titles and headings that need to grab attention.</p>
+            <h4>Body Text: Lato (Regular & Bold)</h4>
+            <p>Lato is a clean, friendly sans-serif font designed for readability in body text. It feels warm and is easy to read on screens of all sizes. <strong>Bolded Lato will be used for emphasis.</strong></p>
+        </section>
+
+        <section class="wireframes">
+            <h2>Wireframes</h2>
+            <p>Wireframes for the home page layout in both mobile and desktop views.</p>
+            <div class="wireframe-container">
+                <div class="wireframe">
+                    <h3>Mobile View</h3>
+                    <img src="mobile.png" alt="Mobile view wireframe sketch">
+                    <ul>
+                        <li>Header (Logo + Nav Toggle)</li>
+                        <li>Hero Image / Countdown</li>
+                        <li>Welcome Text</li>
+                        <li>Featured Events (Cards)</li>
+                        <li>Quick Links Section</li>
+                        <li>Footer</li>
+                    </ul>
+                </div>
+                <div class="wireframe">
+                    <h3>Desktop View</h3>
+                    <img src="desktop.png" alt="Desktop view wireframe sketch">
+                     <ul>
+                        <li>Header (Logo + Full Nav)</li>
+                        <li>Hero Image / Countdown</li>
+                        <li>Welcome Text & Image (2-col)</li>
+                        <li>Featured Events (Grid)</li>
+                        <li>Quick Links Section</li>
+                        <li>Footer</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Moroni Amon Villalobos Ortega | WDD 131 Project</p>
+        <script>
+            document.getElementById('currentyear').textContent = new Date().getFullYear();
+        </script>
+    </footer>
+</body>
+</html>
