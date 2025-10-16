@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FNSM Digital Guide - Home</title>
+    <meta name="description" content="Welcome to the digital guide for the Feria Nacional de San Marcos. Find dates, events, and tips for Mexico's biggest fair.">
+    <meta name="author" content="Moroni Amon Villalobos Ortega">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">FNSM Guide</a>
+
+        <button id="menu-button" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Open Navigation Menu">
+            <span class="hamburger" aria-hidden="true"></span>
+        </button>
+
+        <nav id="main-nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="events.html">Events</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="https://www.nmas.com.mx/_next/image/?url=https%3A%2F%2Fstatic-live.nmas.com.mx%2Fnmas-news%2Fstyles%2Fcorte_16_9%2Fcloud-storage%2F2025-01%2FFERIA%2520SAN%2520MARCOS.jpg%3Fh%3D920929c4%26itok%3D5QJmF4cY&w=1024&q=75" loading="lazy">
+            <div class="hero-text">
+                <h1>Feria Nacional de San Marcos</h1>
+                <div id="countdown">
+                    <p>Next Fair Starts In:</p>
+                    <div class="timer">
+                        <span id="days">00</span> Days
+                        <span id="hours">00</span> Hours
+                        <span id="minutes">00</span> Mins
+                        <span id="seconds">00</span> Secs
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Welcome to Mexico's Grandest Fair!</h2>
+            <p>The Feria Nacional de San Marcos is an annual event held in Aguascalientes, Mexico, and is one of the most important festivals in the country. Spanning several weeks, it offers a spectacular mix of music, culture, gastronomy, and entertainment for millions of visitors.</p>
+            <p>Use this guide to plan your visit, discover can't-miss attractions, and make the most of your experience at the "Feria de México."</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Moroni Amon Villalobos Ortega | WDD 131</p>
+        <p><a href="references.html">References</a></p>
+    </footer>
+</body>
+</html>

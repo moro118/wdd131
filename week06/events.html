@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Attractions - FNSM Digital Guide</title>
+    <meta name="description" content="Explore the schedule of concerts, cultural exhibitions, and family activities at the Feria Nacional de San Marcos.">
+    <meta name="author" content="Moroni Amon Villalobos Ortega">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">FNSM Guide</a>
+        <button id="menu-button" aria-label="Open Navigation Menu"></button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="events.html" class="active">Events</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <h2>Events & Attractions</h2>
+            <p>Discover the heart of the celebration. Filter by category to find exactly what you're looking for.</p>
+            <div id="filter-buttons">
+                <button data-filter="all" class="active">All</button>
+                <button data-filter="concert">Concerts</button>
+                <button data-filter="culture">Culture</button>
+                <button data-filter="family">Family</button>
+            </div>
+            <div id="event-grid" class="event-grid">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Your Name | WDD 131</p>
+        <p><a href="references.html">References</a></p>
+    </footer>
+</body>
+</html>

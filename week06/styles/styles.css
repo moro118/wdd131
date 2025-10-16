@@ -1,0 +1,316 @@
+/* Import Google Fonts */
+
+:root {
+    --primary-color: #A62639; /* Deep Red */
+    --secondary-color: #F2D399; /* Warm Gold */
+    --text-color: #333333; /* Dark Gray */
+    --background-color: #FDFBF7; /* Off-White */
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Lato', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative; /* ADDED: This is crucial. It creates a positioning context for the <nav> menu. */
+    z-index: 10;      /* ADDED: Ensures the header and its contents (like the open nav) sit on top of other elements. */
+}
+
+.logo {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;   /* Positions the nav relative to the header */
+    top: 100%;            /* Starts the nav right below the bottom of the header */
+    left: 0;              /* Aligns it to the left edge */
+    width: 100%;
+    background-color: white; /* FIX: This prevents the menu from being transparent */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav.open {
+    display: flex; /* This correctly shows the menu */
+}
+
+nav a {
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: background-color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+#menu-button {
+    display: block; 
+    width: 30px;
+    height: 20px;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path stroke="rgba(0, 0, 0, 1)" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#menu-button.open {
+     background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path stroke="rgba(0, 0, 0, 1)" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" d="M6 6l18 18M6 24L24 6"/></svg>');
+}
+
+
+
+main {
+    padding: 1rem;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,0.5);
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 90%;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.hero h1 {
+    color: white;
+}
+
+#countdown {
+    margin-top: 1rem;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+
+.timer span {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+}
+
+.content-section {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+
+#filter-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+#filter-buttons button {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primary-color);
+    background-color: #fff;
+    color: var(--primary-color);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#filter-buttons button:hover, #filter-buttons button.active {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.event-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+}
+
+.event-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.event-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-card-content {
+    padding: 1rem;
+}
+
+.event-card h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+#contact-form {
+    display: grid;
+    gap: 1rem;
+}
+
+#contact-form label {
+    font-weight: 700;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: var(--body-font);
+}
+
+#contact-form button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+    opacity: 0.9;
+}
+
+.hidden {
+    display: none;
+}
+
+#form-confirmation, #welcome-message {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: var(--text-color);
+    color: #fff;
+}
+
+footer a {
+    color: var(--secondary-color);
+}
+
+.event-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 3 / 2; 
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    #menu-button {
+        display: none; 
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    nav a {
+        padding: 0 1rem;
+    }
+    
+    main {
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .hero-text {
+        width: 60%;
+    }
+
+    .event-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (min-width: 1024px) {
+    .event-grid {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
