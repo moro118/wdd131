@@ -88,7 +88,7 @@ input:focus, select:focus, textarea:focus {
 }
 
 .required {
-    color: red;
+    color: rgb(169, 1, 1);
 }
 
 .rating {
