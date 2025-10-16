@@ -8,13 +8,17 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Lato', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     background-color: var(--secondary-color);
     color: var(--text-dark);
     margin: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+header, footer, legend, label, .rating-group label {
+    font-family: 'Montserrat', 'Lato', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
 header, footer {
