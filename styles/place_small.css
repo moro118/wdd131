@@ -1,8 +1,8 @@
 :root {
-    /* Colors for Aguascalientes */
-    --primary-color: #9c2a2a; /* Deep Red */
-    --secondary-color: #f1f1f1; /* Off-white */
-    --accent-color: #6d8b74; /* Muted Green */
+   
+    --primary-color: #9c2a2a; 
+    --secondary-color: #f1f1f1; 
+    --accent-color: #6d8b74; 
     --text-color: #333;
 }
 
